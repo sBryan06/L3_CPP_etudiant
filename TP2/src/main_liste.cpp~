@@ -1,0 +1,8 @@
+#include <iostream>
+#include "Liste.hpp"
+
+int main(){
+  Liste l;
+  sdt::cout << l.getTaille();
+  return 0;
+}

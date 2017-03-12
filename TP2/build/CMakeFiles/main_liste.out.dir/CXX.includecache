@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/bryan/Documents/C++/L3_CPP_etudiant/TP2/src/Liste.cpp
+Liste.hpp
+/home/bryan/Documents/C++/L3_CPP_etudiant/TP2/src/Liste.hpp
+cassert
+-
+
+/home/bryan/Documents/C++/L3_CPP_etudiant/TP2/src/Liste.hpp
+
+/home/bryan/Documents/C++/L3_CPP_etudiant/TP2/src/main_liste.cpp
+iostream
+-
+Liste.hpp
+/home/bryan/Documents/C++/L3_CPP_etudiant/TP2/src/Liste.hpp
+

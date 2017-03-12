@@ -1,0 +1,9 @@
+#include "FigureGeometrique.hpp"
+#inlcude <iostream>
+
+FigureGeometrique(const Couleur& couleur){
+  _couleur = couleur;
+}
+const Couleur& getCouleur() const{
+  return _couleur;
+}

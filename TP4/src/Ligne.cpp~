@@ -1,0 +1,8 @@
+#include "Ligne.hpp"
+#include <iostream>
+
+Ligne::Ligne(const Couleur& couleur, const Point& p0, const Point& p1):
+  FigureGeometrique(c), _p0(p0), _p1(p1){
+  
+}
+
