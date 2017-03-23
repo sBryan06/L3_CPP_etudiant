@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/bryan/Documents/C++/L3_CPP_etudiant/TP4/src/FigureGeometrique.cpp" "/home/bryan/Documents/C++/L3_CPP_etudiant/TP4/build/CMakeFiles/main_figure.out.dir/src/FigureGeometrique.cpp.o"
   "/home/bryan/Documents/C++/L3_CPP_etudiant/TP4/src/Ligne.cpp" "/home/bryan/Documents/C++/L3_CPP_etudiant/TP4/build/CMakeFiles/main_figure.out.dir/src/Ligne.cpp.o"
+  "/home/bryan/Documents/C++/L3_CPP_etudiant/TP4/src/PolygoneRegulier.cpp" "/home/bryan/Documents/C++/L3_CPP_etudiant/TP4/build/CMakeFiles/main_figure.out.dir/src/PolygoneRegulier.cpp.o"
   "/home/bryan/Documents/C++/L3_CPP_etudiant/TP4/src/main_figure.cpp" "/home/bryan/Documents/C++/L3_CPP_etudiant/TP4/build/CMakeFiles/main_figure.out.dir/src/main_figure.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

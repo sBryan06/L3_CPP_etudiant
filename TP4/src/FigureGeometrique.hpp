@@ -10,6 +10,7 @@ class FigureGeometrique
  public:
   FigureGeometrique(const Couleur& couleur);
   const Couleur& getCouleur() const;
+  virtual void afficher() const = 0;
 };
 
 #endif

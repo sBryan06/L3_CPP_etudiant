@@ -12,7 +12,7 @@ const Point& Ligne::getP1() const{
   return _p1;
 }
 
-void Ligne::afficher(){
+void Ligne::afficher() const{
   std::cout << "Ligne " << _couleur._r << "_" << _couleur._g
 	    << "_" << _couleur._b << " " << _p0._x << "_"
 	    << _p0._y << " " << _p1._x << "_" << _p1._y

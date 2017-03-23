@@ -1,10 +1,11 @@
 #ifndef LIGNE_HPP
 #define LIGNE_HPP
 
+#include "FigureGeometrique.hpp"
 #include "Point.hpp"
+#include "Couleur.hpp"
 
-class Ligne : public FigureGeometrique
-{
+class Ligne : public FigureGeometrique {
  private:
   Point _p0;
   Point _p1;
