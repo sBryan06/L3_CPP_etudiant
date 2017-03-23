@@ -1,0 +1,13 @@
+#ifndef VIEEWERFIGURES_HPP
+#define VIEEWERFIGURES_HPP
+
+class 
+{
+ protected:
+  Gtk::Main _kit;
+  Gtk::Window _window;
+ public:
+  ViewerFigures(int argc, char** argv);
+};
+
+#endif

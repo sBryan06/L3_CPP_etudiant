@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bryan/Documents/C++/L3_CPP_etudiant/TP4
+CMAKE_SOURCE_DIR = /home/bryan/Documents/C++/L3_CPP_etudiant/TP5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bryan/Documents/C++/L3_CPP_etudiant/TP4/build
+CMAKE_BINARY_DIR = /home/bryan/Documents/C++/L3_CPP_etudiant/TP5/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryan/Documents/C++/L3_CPP_etudiant/TP4/build/CMakeFiles /home/bryan/Documents/C++/L3_CPP_etudiant/TP4/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryan/Documents/C++/L3_CPP_etudiant/TP5/build/CMakeFiles /home/bryan/Documents/C++/L3_CPP_etudiant/TP5/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryan/Documents/C++/L3_CPP_etudiant/TP4/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bryan/Documents/C++/L3_CPP_etudiant/TP5/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -109,6 +109,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named main_fenetre.out
+
+# Build rule for target.
+main_fenetre.out: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main_fenetre.out
+.PHONY : main_fenetre.out
+
+# fast build rule for target.
+main_fenetre.out/fast:
+	$(MAKE) -f CMakeFiles/main_fenetre.out.dir/build.make CMakeFiles/main_fenetre.out.dir/build
+.PHONY : main_fenetre.out/fast
 
 #=============================================================================
 # Target rules for targets named main_figure.out
@@ -204,6 +217,60 @@ src/PolygoneRegulier.cpp.s:
 	$(MAKE) -f CMakeFiles/main_figure.out.dir/build.make CMakeFiles/main_figure.out.dir/src/PolygoneRegulier.cpp.s
 .PHONY : src/PolygoneRegulier.cpp.s
 
+src/ViewerFigures.o: src/ViewerFigures.cpp.o
+
+.PHONY : src/ViewerFigures.o
+
+# target to build an object file
+src/ViewerFigures.cpp.o:
+	$(MAKE) -f CMakeFiles/main_fenetre.out.dir/build.make CMakeFiles/main_fenetre.out.dir/src/ViewerFigures.cpp.o
+.PHONY : src/ViewerFigures.cpp.o
+
+src/ViewerFigures.i: src/ViewerFigures.cpp.i
+
+.PHONY : src/ViewerFigures.i
+
+# target to preprocess a source file
+src/ViewerFigures.cpp.i:
+	$(MAKE) -f CMakeFiles/main_fenetre.out.dir/build.make CMakeFiles/main_fenetre.out.dir/src/ViewerFigures.cpp.i
+.PHONY : src/ViewerFigures.cpp.i
+
+src/ViewerFigures.s: src/ViewerFigures.cpp.s
+
+.PHONY : src/ViewerFigures.s
+
+# target to generate assembly for a file
+src/ViewerFigures.cpp.s:
+	$(MAKE) -f CMakeFiles/main_fenetre.out.dir/build.make CMakeFiles/main_fenetre.out.dir/src/ViewerFigures.cpp.s
+.PHONY : src/ViewerFigures.cpp.s
+
+src/main_fenetre.o: src/main_fenetre.cpp.o
+
+.PHONY : src/main_fenetre.o
+
+# target to build an object file
+src/main_fenetre.cpp.o:
+	$(MAKE) -f CMakeFiles/main_fenetre.out.dir/build.make CMakeFiles/main_fenetre.out.dir/src/main_fenetre.cpp.o
+.PHONY : src/main_fenetre.cpp.o
+
+src/main_fenetre.i: src/main_fenetre.cpp.i
+
+.PHONY : src/main_fenetre.i
+
+# target to preprocess a source file
+src/main_fenetre.cpp.i:
+	$(MAKE) -f CMakeFiles/main_fenetre.out.dir/build.make CMakeFiles/main_fenetre.out.dir/src/main_fenetre.cpp.i
+.PHONY : src/main_fenetre.cpp.i
+
+src/main_fenetre.s: src/main_fenetre.cpp.s
+
+.PHONY : src/main_fenetre.s
+
+# target to generate assembly for a file
+src/main_fenetre.cpp.s:
+	$(MAKE) -f CMakeFiles/main_fenetre.out.dir/build.make CMakeFiles/main_fenetre.out.dir/src/main_fenetre.cpp.s
+.PHONY : src/main_fenetre.cpp.s
+
 src/main_figure.o: src/main_figure.cpp.o
 
 .PHONY : src/main_figure.o
@@ -238,6 +305,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... main_fenetre.out"
 	@echo "... rebuild_cache"
 	@echo "... main_figure.out"
 	@echo "... src/FigureGeometrique.o"
@@ -249,6 +317,12 @@ help:
 	@echo "... src/PolygoneRegulier.o"
 	@echo "... src/PolygoneRegulier.i"
 	@echo "... src/PolygoneRegulier.s"
+	@echo "... src/ViewerFigures.o"
+	@echo "... src/ViewerFigures.i"
+	@echo "... src/ViewerFigures.s"
+	@echo "... src/main_fenetre.o"
+	@echo "... src/main_fenetre.i"
+	@echo "... src/main_fenetre.s"
 	@echo "... src/main_figure.o"
 	@echo "... src/main_figure.i"
 	@echo "... src/main_figure.s"

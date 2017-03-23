@@ -10,7 +10,7 @@ include_directories( ${PKG_INCLUDE_DIRS} )
 add_executable( main_figure.out src/main_figure.cpp src/FigureGeometrique.cpp src/Ligne.cpp src/PolygoneRegulier.cpp)
 target_link_libraries( main_figure.out ${PKG_LIBRARIES} )
 
-add_executable( main_fenetre.out )
+add_executable( main_fenetre.out src/main_fenetre.cpp src/ViewerFigures.cpp)
 target_link_libraries( main_fenetre.out ${PKG_LIBRARIES} )
 
 
