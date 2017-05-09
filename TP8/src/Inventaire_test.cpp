@@ -14,8 +14,8 @@ TEST(GroupInventaire, TestInventaire_1)
 	inventaire._bouteilles.push_back(Bouteille{"mescaline", "2013-06-18", 0.1});
 	std::ostringstream oss;
 	// TODO decommenter
-	//oss << inventaire;
-	//CHECK_EQUAL(oss.str(), "cyanure;2013-08-18;0,25\nmescaline;2013-06-18;0,1\n");
+	oss << inventaire;
+	CHECK(oss.str() == "cyanure;2013-08-18;0,25\nmescaline;2013-06-18;0,1\n");
 	std::locale::global(vieuxLoc);
 }
 

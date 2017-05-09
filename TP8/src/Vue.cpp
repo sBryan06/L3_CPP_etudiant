@@ -30,12 +30,14 @@ Vue(controleur), _kit(argc, argv) {
 	_window.add(_box);
 	_window.show_all();
 
-	actualiser();	// TODO virer ca, c'etait juste pour tester
+	VueConsole::actualiser();
+	VueGraphique::actualiser();	// TODO virer ca, c'etait juste pour tester
 }
 
 void VueGraphique::actualiser() {
-	std::string texte = "bloublou";    // TODO recuperer le vrai texte a afficher
-	_textView.get_buffer()->set_text(texte.c_str());
+  std::string texte; //= "bloublou";    // TODO recuperer le vrai texte a afficher
+  texte = _controleur.getText();
+  _textView.get_buffer()->set_text(texte.c_str());
 }
 
 void VueGraphique::run() {
@@ -52,4 +54,15 @@ void VueGraphique::ouvrirFichier() {
 		// TODO charger les donnees du fichier dans l'inventaire
 	}
 }
+
+///////////////////////////////////////
+// VueGraphique
+///////////////////////////////////////
+void VueConsole::actualiser() {
+  std::string texte; //= "bloublou";    // TODO recuperer le vrai texte a afficher
+  texte = _controleur.getText();
+  //_textView.get_buffer()->set_text(texte.c_str());
+  std::cout << texte;
+}
+
 

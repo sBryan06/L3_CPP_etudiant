@@ -1,4 +1,0 @@
-/home/bryan/Documents/C++/L3_CPP_etudiant/TP5/build/CMakeFiles/edit_cache.dir
-/home/bryan/Documents/C++/L3_CPP_etudiant/TP5/build/CMakeFiles/main_fenetre.out.dir
-/home/bryan/Documents/C++/L3_CPP_etudiant/TP5/build/CMakeFiles/rebuild_cache.dir
-/home/bryan/Documents/C++/L3_CPP_etudiant/TP5/build/CMakeFiles/main_figure.out.dir

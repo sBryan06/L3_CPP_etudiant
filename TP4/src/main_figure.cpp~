@@ -2,6 +2,7 @@
 #include "FigureGeometrique.hpp"
 #include "Ligne.hpp"
 #include "PolygoneRegulier.hpp"
+#include <vector>
 
 int main(){
   Couleur c{1,0,0};
@@ -16,7 +17,15 @@ int main(){
   int nb{5};
   PolygoneRegulier pentagone(cBleu, pCentre, rayon, nb);
   pentagone.afficher();
+
+  std::cout << "nb ponts du polygone: " << pentagone.getNbPoints() << std::endl;
+
+  /*std::vector<FigureGeometrique*> figures {&ligne, &pentagone};
   
-  
+  // PolygoneRegulier(cBleu, pCentre, rayon, nb) };
+
+  for(FigureGeometrique * fig : figures)
+    fig->afficher();
+  */
   return 0;
 } 

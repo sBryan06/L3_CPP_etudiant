@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/bryan/Documents/C++/L3_CPP_etudiant/TP10/src/Liste.hpp
+cassert
+-
+ostream
+-
+
+/home/bryan/Documents/C++/L3_CPP_etudiant/TP10/src/main_liste.cpp
+iostream
+-
+Liste.hpp
+/home/bryan/Documents/C++/L3_CPP_etudiant/TP10/src/Liste.hpp
+

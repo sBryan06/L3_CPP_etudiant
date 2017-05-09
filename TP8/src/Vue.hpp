@@ -49,4 +49,10 @@ class VueGraphique : public Vue {
         void ouvrirFichier();
 };
 
+/*
+//class abstraite vueConsole
+class VueConsole : public Vue {
+  void actualiser();
+};
+*/
 #endif

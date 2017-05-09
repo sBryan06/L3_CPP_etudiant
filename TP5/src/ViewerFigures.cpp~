@@ -1,5 +1,0 @@
-#include "VIEWERFIGURES8HPP"
-
-ViewerFigures::ViewerFigures(int argc, char** argv){
-  
-}

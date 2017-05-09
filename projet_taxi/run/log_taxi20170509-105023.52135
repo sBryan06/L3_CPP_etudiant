@@ -1,0 +1,5 @@
+Log file created at: 2017/05/09 10:50:23
+Running on machine: ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0509 10:50:23.651686 52135 GuiWindow.cpp:68] 20 row(s) read
+I0509 10:50:23.651999 52135 GuiWindow.cpp:69] first row: Agra 41.1771
