@@ -48,10 +48,10 @@ VectorXd computePolyFit(const VectorXd & x, const VectorXd & y, int deg1) {
 
 VectorXd evalPolyFit(const VectorXd & x, const VectorXd & f) {
 
-    VectorXd f;
+    VectorXd y;
     // TODO
 
-    return f;
+    return y;
 }
 
 int main(int argc, char ** argv) {
